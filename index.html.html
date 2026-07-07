@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jewellery Hero</title>
+		<style>
+			body{margin:0;font-family:Arial;background:#faf7f2}
+			.hero{position:relative;height:720px;background:linear-gradient(#fff,#f8f4ef);overflow:hidden}
+			.item{position:absolute;animation:float 4s ease-in-out infinite;transition:.3s}
+			.item:hover{transform:scale(1.08)}
+			.item img{width:100%;display:block;}
+			@keyframes float{0%,100%{translate:0 0}50%{translate:0 -18px}}
+			.i1{left:2%;top:9%;width:170px;}
+			.i2{left:28%;top:14%;width:220px;animation-delay:.5s}
+			.i3{right:26%;top:10%;width:210px;animation-delay:1s}
+			.i4{right:0%;top:3%;width:150px;animation-delay:1.5s}
+			.i5{left:4%;top:38%;width:180px;animation-delay:.8s}
+			.i6{left:28%;bottom:30%;width:150px;animation-delay:1.8s}
+			.i7{left:51%;top:30%;width:250px}
+			.i8{right:11%;top:45%;width:220px;animation-delay:.5s}
+			.i9{left:2%;bottom:5%;width:150px;animation-delay:1s}
+			.i10{left:29%;bottom:2%;width:130px;animation-delay:1.5s}
+			.i11{right:32%;bottom:2%;width:150px;animation-delay:.8s}
+			.i12{right:5%;bottom:4%;width:220px;animation-delay:1.8s}
+			
+			.i1 img, .i2 img, .i3 img, .i5 img, .i8 img, .i11 img{transform:rotate(-30deg);}
+			.i6 img, .i7 img, .i12 img{transform:rotate(30deg);}
+			.i4 img{transform:rotate(40deg);}
+			.i9 img{transform:rotate(-110deg);}
+			
+			.promo-bar{
+				background:#000;
+				color:#fff;
+				text-align:center;
+				padding:12px 20px 18px;
+			}
+
+			.promo-title{
+				font-size:20px;
+				font-weight:700;
+				letter-spacing:1px;
+				text-transform:uppercase;
+				margin-bottom:14px;
+			}
+
+			.promo-title span{
+				font-size:12px;
+				border:1px solid #fff;
+				padding:3px 8px;
+				border-radius:20px;
+				vertical-align:middle;
+				margin-left:8px;
+			}
+
+			.promo-links{
+				display:flex;
+				justify-content:center;
+				gap:80px;
+			}
+
+			.promo-links a{
+				color:#fff;
+				text-decoration:none;
+				font-size:18px;
+				text-transform:uppercase;
+				transition:.3s;
+			}
+
+			.promo-links a:hover{
+				color:#cfcfcf;
+			}
+			
+			@media (max-width:1200px){
+				.hero{height:600px;}
+				.item{width:120px!important;}
+			}
+			
+			@media (max-width:767px){
+				.item{width:80px!important;}
+				.hero{height:400px;}
+			}
+			
+			@media (max-width:575px){
+				.hero{height:400px;}
+				.item{width:50px!important;}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="promo-bar">
+			<div class="promo-title">
+				AVAIL 10% OFF YOUR FIRST QUOD
+				<span>SIGN UP</span>
+			</div>
+			<div class="promo-links">
+				<a href="#">SHOP JEWELS</a>
+				<a href="#">SHOP CLOTHING</a>
+			</div>
+		</div>
+		
+		<section class="hero">
+			<a class="item i1" href="/products/quod-silver-plated-tooth-studs"><img src="./images/Teeth Studs.png"></a>
+			<a class="item i2" href="/products/quod-wreath-earrings"><img src="./images/Wreath Earrings.png"></a>
+			<a class="item i3" href="/products/qed-pearl-earrings"><img src="./images/QED Gold Earrings.png" alt=""></a>
+			<a class="item i4" href="/products/xl-quod-bracelet"><img src="./images/QUOD XL Cuff.png"></a>
+			<a class="item i5" href="/products/rising-sun-earrings"><img src="./images/Rising Sun Earrings.png"></a>
+			<a class="item i6" href="/products/qed-pearl-ring-2"><img src="./images/QED Silver Ring.png"></a>
+			<a class="item i7" href="/products/quod-silver-plated-teeth-necklace"><img src="./images/Teeth Necklace.png"></a>
+			<a class="item i8" href="/products/quod-interstellar-necklace"><img src="./images/Interstellar Necklace.png"></a>
+			<a class="item i9" href="/products/quod-interstellar-ring"><img src="./images/Interstellar Ring.png" alt=""></a>
+			<a class="item i10" href="/products/quod-wreath-ring"><img src="./images/Wreath Ring.png"></a>
+			<a class="item i11" href="/products/liquid-gold-ring"><img src="./images/Liquid Gold Ring.png"></a>
+			<a class="item i12" href="/products/quod-silver-plated-teeth-bangle"><img src="./images/Teeth Bangle.png"></a>
+		</section>
+	</body>
+</html>
